@@ -49,6 +49,11 @@ After the build, the file we need is:
 
 Copy this file to your Linux machine where you will build the kernel. You will later place it as `init` inside the initramfs directory.
 
+edit: Strip it too: 
+```
+strip /usr/obj/usr/src/amd64.amd64/stand/loader.kboot
+```
+
 ---
 
 ## 2. Build the minimal Linux kernel (coreboot payload)
